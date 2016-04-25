@@ -16,7 +16,7 @@ cd vendor/gifsicle
 TAR_URL=http://www.lcdf.org/gifsicle/gifsicle-1.88.tar.gz
 curl -L --silent $TAR_URL | tar xz
 
-cd gifsicle-1.87
+cd gifsicle-1.88
 
 ./bootstrap.sh
 autoconf -i
