@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
-TAR_URL=http://www.lcdf.org/gifsicle/gifsicle-1.88.tar.gz
+TAR_URL=http://www.lcdf.org/gifsicle/gifsicle-1.82.tar.gz
 
 echo "-----> Installing gifsicle"
 
@@ -13,10 +13,10 @@ cd $1
 mkdir -p vendor/gifsicle
 cd vendor/gifsicle
 
-TAR_URL=http://www.lcdf.org/gifsicle/gifsicle-1.88.tar.gz
+TAR_URL=http://www.lcdf.org/gifsicle/gifsicle-1.82.tar.gz
 curl -L --silent $TAR_URL | tar xz
 
-cd gifsicle-1.88
+cd gifsicle-1.82
 
 ./bootstrap.sh
 autoconf -i
